@@ -8,6 +8,7 @@ module.exports = {
     devtool: isProd ? false: 'source-map',
     devServer: {
       open: true,
+      disableHostCheck: true,
       proxy: {
         '/netease-api': {
           target: 'http://localhost:3000',
